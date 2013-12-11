@@ -1,0 +1,44 @@
+<%= erb :_header %>
+<div class="header-top">
+  <div class="container">
+    <a class="header-box" href="#">Title</a>
+    <a class="btn-login" href="">Logga in</a>
+  </div>
+</div>
+<div class="header-page">
+  <div class="container">
+    <div class="header-logo">
+      <h1>Title <strong> Sub</strong></h1>
+      <form>
+        <input type="search" name="" value="" placeholder="Sök"/>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-left col-9">
+    <% 10.times do |n| %>
+    <a class="teaser" href="/article">
+      <img class="teaser-img" src="http://placehold.it/532x130&amp;text=Teaser img" alt="" />
+      <div class="teaser-content">
+        <h2>TITLE TITLE</h2>
+        <span class="teaser-timestamp">Tis 20 september</span>
+        <p class="teaser-preamble">
+          Both were silent again, as one man. The grey dawn came
+          on, and the slumbering crew arose from the boat's
+          bottom, and ere noon the dead whale was brought to the
+          ship.
+        </p>
+      </div>
+    </a>
+    <% end %>
+  </div>
+  <div class="col-right col-3">
+    <% 10.times do |n| %>
+    <a class="teaser" href="/article">
+      <img class="teaser-img" src="http://placehold.it/532x130&amp;text=col right" alt="" />
+    </a>
+    <% end %>
+  </div>
+</div>
+<%= erb :_footer %>

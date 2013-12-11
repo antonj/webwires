@@ -1,0 +1,116 @@
+@import "compass";
+@import "grid";
+@import "base";
+
+$dimen-padding: 10px;
+$color-blue-bg: #004256;
+
+.container {
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto;
+   @include box-sizing(border-box);
+}
+
+.footer {
+   clear: both;
+   width: 100%;
+   background: #333;
+   color: white;
+   text-align: center;
+   padding: $dimen-padding;   
+}
+
+.header-top {
+   background: #333;
+   color: #fff;
+   overflow: hidden;
+   a {
+      color: #fff;
+   }
+}
+
+.stuck {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+.btn-login {
+   background: $color-blue-bg;
+   padding: $dimen-padding;
+   float: right;
+   font-size: 12px;
+}
+
+.header-page {
+   background: #fff;
+   padding: $dimen-padding;
+
+   h1 {
+      display: inline;
+      color: black;
+      font-weight: normal;
+      font-size: 24px;
+      strong {
+         font-weight: bold;
+      }
+   }
+   p {
+      display: inline;      
+      color: black;
+      font-size: 12px;
+   }
+
+   form {
+      display: block;
+      float: right;
+   }
+}
+
+.col-left {
+   padding: $dimen-padding ($dimen-padding / 2);
+}
+
+.col-right {
+   padding: $dimen-padding ($dimen-padding / 2);
+   .col-6 {
+      padding: $dimen-padding;
+
+      @media #{$mq-medium} {
+         width: 100%;
+         img {
+            display: none;
+         }
+      }
+   }
+}
+
+.teaser {
+   display: block;
+   background: #fff;
+   color: #000;
+   margin-bottom: $dimen-padding;
+   h2 {
+      font-size: 24px;
+   }
+
+   &:hover {
+      color: #07c;
+   }
+}
+
+.teaser-content {
+   padding: $dimen-padding;
+}
+
+.teaser-img {
+   width: 100%;
+   height: auto;
+}
+
+.teaser-timestamp {
+   color: grey;
+   font-size: 10px;
+}

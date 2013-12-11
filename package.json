@@ -1,0 +1,18 @@
+{
+  "name": "webwires",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-notify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-compass": "*",
+    "browserify": "3.0",
+    "grunt-browserify": "1.2.9",
+    "grunt-contrib-qunit": "*",
+    "matchdep": "*"
+  }
+}
